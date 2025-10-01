@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managing Ethical Dilemmas</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Load Inter Font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f7f7f7; }
+
+        /* Custom Colors based on the provided palette */
+        .deep-violet { color: #532A8C; }
+        .bg-deep-violet { background-color: #532A8C; }
+        .muted-lavender { background-color: #9D8ABB; }
+        
+        /* Custom Accordion Styling for smooth transition */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-in-out;
+        }
+        .accordion-item.active .accordion-content {
+            /* Use a large max-height for smooth transition without calculating exact content height */
+            max-height: 1000px; 
+        }
+        
+        /* Custom card styling for shadow/border and minimum height */
+        .card-panel {
+            border-radius: 0.75rem; /* rounded-xl */
+            padding: 1.5rem; /* p-6 */
+            min-height: 350px;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+
+    <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-6 sm:p-10">
+
+        <!-- Title and Introduction -->
+        <h1 class="text-3xl font-extrabold text-center mb-2 deep-violet">
+            Managing Ethical Dilemmas: Principles in Conflict
+        </h1>
+        <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">
+            Ethical dilemmas arise when two or more core ethical principles conflict, making the course of action unclear. Click on each scenario below to analyse the risks and determine the best professional practice.
+        </p>
+        
+        <!-- NEW GUIDANCE SECTION: Structured Approach to Resolution -->
+        <div class="bg-purple-50 p-6 rounded-xl border border-purple-200 mb-8 shadow-sm">
+            <h2 class="text-xl font-bold deep-violet mb-3">A Structured Approach to Resolution</h2>
+            <p class="text-sm text-gray-700 mb-4">
+                Resolving ethical dilemmas requires a systematic approach to balance conflicting duties while upholding professional standards.
+            </p>
+            <ol class="list-decimal list-inside space-y-2 text-gray-700 font-medium ml-4">
+                <li><strong class="text-deep-violet">Identify the conflict:</strong> Clearly articulate the core issue and the ethical principles involved (e.g., autonomy vs. beneficence).</li>
+                <li><strong class="text-deep-violet">Identify stakeholders:</strong> Determine who will be affected by the decision (patient, dentist, staff, practice).</li>
+                <li><strong class="text-deep-violet">Identify options:</strong> List all possible courses of action.</li>
+                <li><strong class="text-deep-violet">Evaluate options:</strong> Assess each option against the Codes of Conduct, practice policy, and legal requirements.</li>
+                <li><strong class="text-deep-violet">Seek counsel:</strong> Consult with the supervising dentist or practice management.</li>
+                <li><strong class="text-deep-violet">Act and Document:</strong> Implement the chosen course of action and meticulously document the entire process and rationale.</li>
+            </ol>
+        </div>
+        <!-- END OF NEW GUIDANCE SECTION -->
+
+        <!-- ACCORDION CONTAINER -->
+        <div id="accordion-container" class="space-y-4">
+
+            <!-- SCENARIO 1: Loyalty vs. Confidentiality Duty -->
+            <div class="accordion-item bg-white rounded-xl shadow-md border border-gray-200">
+                <button class="accordion-header flex items-center justify-between w-full p-4 muted-lavender text-white font-semibold rounded-xl hover:bg-opacity-90 transition duration-150" onclick="toggleAccordion(this)">
+                    <span class="flex items-center text-lg">
+                        <!-- Lock Icon for Confidentiality/Security -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                        Scenario 1: Loyalty to Colleague vs. Confidentiality Duty
+                    </span>
+                    <!-- Dropdown Arrow Icon -->
+                    <svg class="w-5 h-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div class="accordion-content">
+                    <div class="p-6">
+                        <p class="mb-4 text-gray-600">
+                            <strong>Dilemma: Identifying the Conflict</strong> The dental assistant observes a colleague misusing their access privileges by viewing the confidential records of a family friend, who is not their patient and is not scheduled for treatment. The primary ethical conflict here is <strong>Fidelity (loyalty to a colleague)</strong> versus <strong>Justice (upholding patient rights and legal confidentiality)</strong>. The immediate decision is whether to prioritize team harmony or the patient's privacy rights.
+                        </p>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                            <!-- COMMON RISKS (RED) -->
+                            <div class="card-panel border-2 border-red-500 bg-red-50">
+                                <h3 class="flex items-center text-red-700 font-bold mb-4 text-xl">
+                                    <!-- Circular Exclamation Mark Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    Common Risks & Unprofessional Action
+                                </h3>
+                                <ul class="list-disc list-outside space-y-3 pl-5 text-gray-700">
+                                    <li><strong>Ignoring the Breach:</strong> Failing to report the incident normalises unprofessional conduct and exposes the practice to serious <strong>legal penalties</strong> under the <strong>Privacy Act 1988</strong>.</li>
+                                    <li><strong>Direct Confrontation:</strong> Directly accusing the colleague may escalate the conflict and prevent objective reporting and resolution via management.</li>
+                                    <li><strong>Breach of Trust:</strong> The colleague has violated the "need to know" principle, which undermines patient autonomy and the ethical standard of the team.</li>
+                                </ul>
+                            </div>
+                            <!-- BEST PRACTICE (GREEN) -->
+                            <div class="card-panel border-2 border-green-500 bg-green-50">
+                                <h3 class="flex items-center text-green-700 font-bold mb-4 text-xl">
+                                    <!-- Checkmark Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    Best Practice & Professional Duty
+                                </h3>
+                                <ul class="list-disc list-outside space-y-3 pl-5 text-gray-700">
+                                    <li><strong>Prioritise Patient Privacy (Justice):</strong> The ethical duty to the patient and the legal requirement (Duty of Care) to maintain confidentiality outweigh loyalty to a colleague.</li>
+                                    <li><strong>Follow Reporting Policy:</strong> Immediately report the incident, discreetly and confidentially, to the supervising dentist or practice manager.</li>
+                                    <li><strong>Documentation:</strong> Ensure a factual, unbiased record is made of the observation, date, and time for internal compliance records.</li>
+                                    <li><strong>Ethical Framework:</strong> Adhering to the <strong>Code of Conduct</strong> ensures the practice environment remains trustworthy and legally compliant.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SCENARIO 2: Process Integrity & Failure to Confirm Patient/Options -->
+            <div class="accordion-item bg-white rounded-xl shadow-md border border-gray-200">
+                <button class="accordion-header flex items-center justify-between w-full p-4 muted-lavender text-white font-semibold rounded-xl hover:bg-opacity-90 transition duration-150" onclick="toggleAccordion(this)">
+                    <span class="flex items-center text-lg">
+                        <!-- Clipboard Check Icon for Verification/Confirmation (NEW ICON) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                        </svg>
+                        Scenario 2: Failure to Confirm Patient/Options
+                    </span>
+                    <!-- Dropdown Arrow Icon -->
+                    <svg class="w-5 h-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div class="accordion-content">
+                    <div class="p-6">
+                        <p class="mb-4 text-gray-600">
+                            <strong>Dilemma: Identifying the Conflict</strong> A patient, '<strong>John B.</strong>', is in the chair for a root canal consultation. The dental assistant incorrectly pulls up the chart for '<strong>John D.</strong>' and the dentist begins discussing a complex, expensive implant plan. The assistant notices the discrepancy but is reluctant to interrupt the dentist. The conflict is between the duty to provide correct information (<strong>Veracity</strong>) and the immediate duty of safety and proper process (<strong>Non-Maleficence</strong>).
+                        </p>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                            <!-- COMMON RISKS (RED) -->
+                            <div class="card-panel border-2 border-red-500 bg-red-50">
+                                <h3 class="flex items-center text-red-700 font-bold mb-4 text-xl">
+                                    <!-- Circular Exclamation Mark Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    Common Risks & Unprofessional Action
+                                </h3>
+                                <ul class="list-disc list-outside space-y-3 pl-5 text-gray-700">
+                                    <li><strong>Failing to Identify Patient (Stakeholder):</strong> Continuing the discussion for the wrong chart leads to potential legal harm and confusion for <strong>John B.</strong></li>
+                                    <li><strong>Failing to Identify Options:</strong> The patient receives irrelevant and anxiety-inducing information, violating <strong>Beneficence</strong> (duty to help) by failing to present the <strong>correct</strong> treatment options for their actual condition (root canal).</li>
+                                    <li><strong>Breach of Veracity:</strong> Allowing the misleading conversation to continue undermines the fundamental ethical duty to be truthful with the patient.</li>
+                                    <li><strong>Charting Error:</strong> If the conversation is documented on the wrong chart (<strong>John D.</strong>), it creates massive administrative and legal cleanup, jeopardizing the clinical records of <strong>both patients</strong>.</li>
+                                </ul>
+                            </div>
+                            <!-- BEST PRACTICE (GREEN) -->
+                            <div class="card-panel border-2 border-green-500 bg-green-50">
+                                <h3 class="flex items-center text-green-700 font-bold mb-4 text-xl">
+                                    <!-- Checkmark Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    Best Practice & Professional Duty
+                                </h3>
+                                <ul class="list-disc list-outside space-y-3 pl-5 text-gray-700">
+                                    <li><strong>Act Immediately (Non-Maleficence):</strong> The assistant must interrupt the discussion immediately to prevent further confusion and potential harm.</li>
+                                    <li><strong>Re-confirm Stakeholder Identity:</strong> Politely confirm the patient's identity (full name and DOB) verbally and correct the chart on the screen to match <strong>John B.'s</strong> file.
+                                    </li>
+                                    <li><strong>Identify Correct Options (Veracity & Beneficence):</strong> Restart the consultation using the correct chart, ensuring the dentist discusses the actual required treatment (root canal) and the appropriate options for <strong>John B.</strong>.
+                                        <ol class="list-lower-alpha list-inside mt-1 ml-4 space-y-1">
+                                            <li><strong>Option 1:</strong> Root canal therapy (Optimal).</li>
+                                            <li><strong>Option 2:</strong> Extraction (Intermediate/Alternative).</li>
+                                            <li><strong>Option 3:</strong> Observation/Referral (If warranted).</li>
+                                        </ol>
+                                    </li>
+                                    <li><strong>Comprehensive Documentation:</strong> Meticulously document the error, the correction, and the patient's confirmation of the correct treatment plan in <strong>John B.'s</strong> chart.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SCENARIO 3: Undocumented Procedure vs. Immediate Need -->
+            <div class="accordion-item bg-white rounded-xl shadow-md border border-gray-200">
+                <button class="accordion-header flex items-center justify-between w-full p-4 muted-lavender text-white font-semibold rounded-xl hover:bg-opacity-90 transition duration-150" onclick="toggleAccordion(this)">
+                    <span class="flex items-center text-lg">
+                        <!-- Documentation/Paper Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M10 16h.01" />
+                        </svg>
+                        Scenario 3: Undocumented Procedure vs. Immediate Need
+                    </span>
+                    <!-- Dropdown Arrow Icon -->
+                    <svg class="w-5 h-5 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div class="accordion-content">
+                    <div class="p-6">
+                        <p class="mb-4 text-gray-600">
+                            <strong>Dilemma:</strong> During a scheduled check-up, the dentist notices an urgent, unexpected issue (e.g., a cracked tooth needing immediate temporary repair). They briefly explain the procedure, but due to time constraints, the dental assistant is asked to skip the standard formal process of documenting patient consent and detailed notes <strong>before</strong> starting the emergency repair.
+                        </p>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                            <!-- COMMON RISKS (RED) -->
+                            <div class="card-panel border-2 border-red-500 bg-red-50">
+                                <h3 class="flex items-center text-red-700 font-bold mb-4 text-xl">
+                                    <!-- Circular Exclamation Mark Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    Common Risks & Unprofessional Action
+                                </h3>
+                                <ul class="list-disc list-outside space-y-3 pl-5 text-gray-700">
+                                    <li><strong>Missing Consent:</strong> Performing any non-routine procedure without documented consent exposes the practice to a potential <strong>battery claim</strong> (even for minor procedures).</li>
+                                    <li><strong>Poor Legal Defense:</strong> Lack of immediate, detailed documentation makes it impossible to defend the clinical decision or procedure outcome if the patient makes a complaint later.</li>
+                                    <li><strong>Loss of Continuity:</strong> Subsequent practitioners relying on the incomplete record will be unable to accurately assess the patient's history or previous treatment, compromising future care quality.</li>
+                                </ul>
+                            </div>
+                            <!-- BEST PRACTICE (GREEN) -->
+                            <div class="card-panel border-2 border-green-500 bg-green-50">
+                                <h3 class="flex items-center text-green-700 font-bold mb-4 text-xl">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    Best Practice & Professional Duty
+                                </h3>
+                                <ul class="list-disc list-outside space-y-3 pl-5 text-gray-700">
+                                    <li><strong>Prioritise Documentation of Consent:</strong> Even in an urgent scenario, the assistant must ensure the patient provides <strong>verbal consent</strong> and that this is recorded in the notes <strong>immediately</strong> before the repair starts.</li>
+                                    <li><strong>The Golden Rule:</strong> The adage is: "If it wasn't written down, it didn't happen." The assistant must make concise, real-time notes of the findings, the reason for the urgent repair, and the consent obtained.</li>
+                                    <li><strong>Time Management:</strong> Inform the dentist that while the emergency can be addressed, the patient <strong>must</strong> be rebooked for a later, full appointment to complete the documentation, final treatment plan, and proper note entry.</li>
+                                    <li><strong>Ethical Duty:</strong> The duty to provide <strong>Beneficence</strong> (treating the urgent issue) must be balanced with <strong>Justice</strong> (maintaining professional standards and documentation).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript for Accordion Logic -->
+    <script>
+        /**
+         * Toggles the active state and max-height for an accordion item.
+         * Closes all other open items.
+         * @param {HTMLElement} button - The button element that was clicked (the header).
+         */
+        function toggleAccordion(button) {
+            const item = button.closest('.accordion-item');
+            const content = item.querySelector('.accordion-content');
+            const isActive = item.classList.contains('active');
+
+            // Close all other items and reset their header rounding
+            document.querySelectorAll('.accordion-item').forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                    otherItem.querySelector('.accordion-content').style.maxHeight = null;
+                    
+                    // Ensure closed headers are fully rounded
+                    const otherHeader = otherItem.querySelector('.accordion-header');
+                    otherHeader.classList.add('rounded-xl');
+                    otherHeader.classList.remove('rounded-t-xl');
+                }
+            });
+
+            // Toggle the clicked item
+            if (isActive) {
+                // Close it
+                item.classList.remove('active');
+                content.style.maxHeight = null;
+                // Add full rounded corners back to the closed header
+                button.classList.add('rounded-xl');
+                button.classList.remove('rounded-t-xl');
+
+            } else {
+                // Open it
+                item.classList.add('active');
+                // Set max-height using scrollHeight for smooth transition
+                content.style.maxHeight = content.scrollHeight + "px";
+                // Remove bottom rounded corners from the open header
+                button.classList.remove('rounded-xl');
+                button.classList.add('rounded-t-xl');
+            }
+        }
+        
+        // Initial setup to ensure all headers start with full rounding if closed
+        window.onload = function() {
+            document.querySelectorAll('.accordion-item').forEach(item => {
+                const header = item.querySelector('.accordion-header');
+                if (!item.classList.contains('active')) {
+                    header.classList.add('rounded-xl');
+                    header.classList.remove('rounded-t-xl');
+                }
+            });
+        };
+    </script>
+
+</body>
+</html>
